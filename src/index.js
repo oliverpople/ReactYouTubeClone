@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
-
 import SearchBar from './components/search_bar';
+import VideoList from './components/video_list';
 
 const API_KEY = '';
 
@@ -15,7 +15,7 @@ class App extends Component {
     this.state = { videos: [] }
 
     YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {  // refactored callback using =>
-      this.setState({ videos: vidoes });  // condense key:value pair with identical terms {videos: vidoes}
+      this.setState({ videos });  // condense key:value pair with identical terms {videos: vidoes}
     });
 
   }
@@ -24,6 +24,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
+        <VideoList videos= {this.state.videos} />
       </div>
     );
   }
