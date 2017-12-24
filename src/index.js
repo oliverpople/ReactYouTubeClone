@@ -7,16 +7,14 @@ import VideoDetail from './components/video_detail';
 
 const API_KEY = '';
 
-// create a new component.  This component
-// should produce some html
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = { videos: [] }
 
-    YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {  // refactored callback using =>
-      this.setState({ videos });  // condense key:value pair with identical terms {videos: vidoes}
+    YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
+      this.setState({ videos });
     });
 
   }
@@ -32,6 +30,4 @@ class App extends Component {
   }
 }
 
-// Take this component's generated HTML
-// and put it on the page (in the DOM)
-ReactDOM.render(<App />, document.querySelector('.container'));  // second argument is the target container/ DOM node
+ReactDOM.render(<App />, document.querySelector('.container'));
