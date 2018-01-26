@@ -6,7 +6,7 @@ A web app that emulates the basic functionality of Youtube. I built this app to 
 ![alt text](https://user-images.githubusercontent.com/28346556/34718807-10e298f6-f530-11e7-9581-b7c5833dba88.png)
 
 ### Getting Started
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Checkout this repo, install dependencies, then start with the following:
 
 ```
 > git clone https://github.com/oliverpople/ReactYouTubeClone.git
