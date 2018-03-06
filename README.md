@@ -3,7 +3,7 @@
 A web app that emulates the basic functionality of Youtube. I built this app to learn React using Stephen Grider's Udemy course: https://github.com/StephenGrider/ReduxSimpleStarter
 
 ### UI
-![alt text](https://user-images.githubusercontent.com/28346556/34718807-10e298f6-f530-11e7-9581-b7c5833dba88.png)
+![alt text](https://user-images.githubusercontent.com/oliverpople/Tip_Adder/nandos_screenshot.png)
 
 ### Getting Started
 Checkout this repo, install dependencies, then start with the following:
